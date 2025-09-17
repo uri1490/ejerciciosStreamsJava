@@ -19,19 +19,29 @@ import java.util.stream.Collectors;
 
 public class StreamsChatGpt {
     List<Persona> personas = Arrays.asList(
-            new Persona("Ana", 25, "Guanajuato"),
-            new Persona("Luis", 17, "Queretaro"),
-            new Persona("Maria", 32, "Queretaro"),
-            new Persona("Fabi", 32, "Queretaro"),
-            new Persona("Pedro", 19, "Guanajuato"),
-            new Persona("Zambi", 19, "Guanajuato"));
+            new Persona("Ana", 25, "Guanajuato", Optional.ofNullable(
+                    null)),
+            new Persona("Luis", 17, "Queretaro", Optional.ofNullable(
+                    null)),
+            new Persona("Maria", 32, "Queretaro", Optional.ofNullable(
+                    null)),
+            new Persona("Fabi", 32, "Queretaro", Optional.ofNullable(
+                    null)),
+            new Persona("Pedro", 19, "Guanajuato", Optional.ofNullable(
+                    null)),
+            new Persona("Zambi", 19, "Guanajuato", Optional.ofNullable(null)));
     List<Estudiante> estudiantes = Arrays.asList(
-            new Estudiante("Ana", 25, "Guanajuato", "Matematicas", 90.0),
-            new Estudiante("Luis", 17, "Queretaro", "Matematicas", 85.0),
-            new Estudiante("Maria", 32, "Queretaro", "Espanol", 60.0),
-            new Estudiante("Fabi", 32, "Queretaro", "Espanol", 80.0),
-            new Estudiante("Pedro", 19, "Guanajuato", "Geografia", 70.0),
-            new Estudiante("Zambi", 19, "Guanajuato", "Ciencias", 78.0));
+            new Estudiante("Ana", 25, "Guanajuato", Optional.ofNullable(
+                    null), "Matematicas", 90.0),
+            new Estudiante("Luis", 17, "Queretaro", Optional.ofNullable(
+                    null), "Matematicas", 85.0),
+            new Estudiante("Maria", 32, "Queretaro", Optional.ofNullable(
+                    null), "Espanol", 60.0),
+            new Estudiante("Fabi", 32, "Queretaro", Optional.ofNullable(
+                    null), "Espanol", 80.0),
+            new Estudiante("Pedro", 19, "Guanajuato", Optional.ofNullable(
+                    null), "Geografia", 70.0),
+            new Estudiante("Zambi", 19, "Guanajuato", Optional.ofNullable(null), "Ciencias", 78.0));
 
     public void palabrasMayores() {
         List<String> palabras = Arrays.asList("java", "python", "kotlin", "scala", "go");

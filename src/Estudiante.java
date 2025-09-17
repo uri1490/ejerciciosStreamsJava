@@ -1,9 +1,12 @@
+import java.util.Optional;
+
 public class Estudiante extends Persona {
     String materia;
     Double calificacion;
 
-    public Estudiante(String nombre, int edad, String ciudad, String materia, Double calificacion) {
-        super(nombre, edad, ciudad);
+    public Estudiante(String nombre, int edad, String ciudad, Optional<String> codigoPostal, String materia,
+            Double calificacion) {
+        super(nombre, edad, ciudad, codigoPostal);
         this.materia = materia;
         this.calificacion = calificacion;
         // TODO Auto-generated constructor stub
